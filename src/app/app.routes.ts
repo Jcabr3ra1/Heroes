@@ -6,6 +6,7 @@ import { HistoriaComponent } from './components/utilidades/historia/historia.com
 import { CarouselComponent } from './components/utilidades/carousel/carousel.component';
 import { AutorComponent } from './components/utilidades/autor/autor.component';
 import { HeroesComponent } from './components/utilidades/heroes/heroes.component';
+import { SwitchComponent } from './components/utilidades/switch/switch.component';
 
 const APP_ROUTES:Routes=[
     
@@ -15,6 +16,7 @@ const APP_ROUTES:Routes=[
     {path:'HojaDeVida',component:AutorComponent},
     {path:'heroes',component:HeroesComponent},
     {path:'**',pathMatch:'full', redirectTo: 'home'},
+    {path:'switch',component:SwitchComponent}
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
