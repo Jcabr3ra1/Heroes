@@ -23,6 +23,7 @@ import { HistoriaComponent } from './components/utilidades/historia/historia.com
 
 import { APP_ROUTING } from './app.routes';
 import { from } from 'rxjs';
+import { SwitchComponent } from './components/utilidades/switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { from } from 'rxjs';
     SobrenComponent,
     AutorComponent,
     HeroesComponent,
-    HistoriaComponent
+    HistoriaComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
