@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 //RUTAS
 //import{APP_ROUTING} from './app.routes';
@@ -41,6 +42,7 @@ import { SwitchComponent } from './components/utilidades/switch/switch.component
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     APP_ROUTING //rutas
   ],
   //aqui llamo servicios

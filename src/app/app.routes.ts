@@ -15,8 +15,9 @@ const APP_ROUTES:Routes=[
     {path:'historia',component:HistoriaComponent},
     {path:'HojaDeVida',component:AutorComponent},
     {path:'heroes',component:HeroesComponent},
-    {path:'**',pathMatch:'full', redirectTo: 'home'},
-    {path:'switch',component:SwitchComponent}
+    {path:'switch',component:SwitchComponent},
+    {path:'**',pathMatch:'full', redirectTo: 'home'}
+    
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
