@@ -15,7 +15,6 @@ import { Injectable } from '@angular/core';
         options: ['Hulk', 'Thor', 'Capitán América', 'Ojo de Halcón'],
         correctAnswer: 1
       },
-      // Agrega más preguntas aquí
     ];
   
     constructor() { }
