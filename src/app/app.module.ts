@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+//Inicia servicios
+import { CargarScriptsService } from './cargar-scripts.service';
+//fin servicios
+
 //RUTAS
 //import{APP_ROUTING} from './app.routes';
 
@@ -46,7 +50,10 @@ import { SwitchComponent } from './components/utilidades/switch/switch.component
     APP_ROUTING //rutas
   ],
   //aqui llamo servicios
-  providers: [HeroesService],
+  providers: [
+    CargarScriptsService,
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
