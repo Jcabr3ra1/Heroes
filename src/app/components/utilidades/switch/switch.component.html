@@ -1,0 +1,80 @@
+<div class="container" [ngSwitch]="state">
+    <ng-container *ngSwitchCase="'quiz'">
+        <h2>{{questions[questionIndex].question}}</h2>
+        <div [ngSwitch]="questionIndex">
+            <ng-container *ngSwitchCase="0">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="1">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="2">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="3">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="4">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="5">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="6">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="7">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="8">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="9">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="10">
+                <button (click)="selectAnswer(0)">{{ questions[questionIndex].options[0] }}</button>
+                <button (click)="selectAnswer(1)">{{ questions[questionIndex].options[1] }}</button>
+                <button (click)="selectAnswer(2)">{{ questions[questionIndex].options[2] }}</button>
+                <button (click)="selectAnswer(3)">{{ questions[questionIndex].options[3] }}</button>
+            </ng-container>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="'results'">
+        <div class="results">
+            <h2>Resultado</h2>
+            <p>Tu puntuación es : {{score}} / {{ questions.length }}</p>
+            <button (click)="restartQuiz()">Reiniciar Quiz</button>
+        </div>    
+    </ng-container>
+</div>
